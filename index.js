@@ -2,5 +2,8 @@
 'use strict';
 
 module.exports = {
-  name: 'blue'
+  name: 'blue',
+  included: function(app) {
+    this._super.included(app);
+  }
 };
